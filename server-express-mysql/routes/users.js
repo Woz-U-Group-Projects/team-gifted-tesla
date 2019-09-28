@@ -48,6 +48,7 @@ router.post('/login', function (req, res, next) {
         let token = authService.signUser(user);
         res.cookie('jwt', token);
         res.send('Login successful');
+        res.redirect(301, 'http://localhost:3001/users/profile');
       } else {
         console.log('Wrong password');
         res.send('Wrong password');
