@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./Userlogin";
+import "./Userlogin.css";
 import { Redirect } from 'react-router-dom';
 
 const formValid = ({ ...rest }) => {
@@ -24,6 +24,10 @@ class Userlogin extends Component {
         }
     }
 
+    setRedirect = () => {
+        this.setState({ redirect: true })
+    }
+
     renderRedirect = () => {
         if (this.state.redirect) {
             return <Redirect to="/users/profile" />
@@ -44,6 +48,8 @@ class Userlogin extends Component {
 
         if (formValid(this.state)) {
             this.setState({ redirect: true })
+        } else {
+            console.error("Invalid Login");
         }
     }
 

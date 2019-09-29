@@ -38,19 +38,8 @@ class Usersignup extends Component {
                 email: "",
                 username: "",
                 password: ""
-            },
-            redirect: false
+            }
         };
-    }
-
-    setRedirect = () => {
-        this.setState({ redirect: true })
-    }
-
-    renderRedirect = () => {
-        if (this.state.redirect) {
-            return <Redirect to="/users/login" />
-        }
     }
 
     handleSubmit = e => {
@@ -194,7 +183,6 @@ class Usersignup extends Component {
                             )}
                         </div>
                         <div className="createAccount">
-                            {this.renderRedirect()}
                             <button type="submit">Create Account</button>
                             <small>Already Have an Account?</small>
                         </div>
