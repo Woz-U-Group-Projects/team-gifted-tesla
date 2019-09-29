@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./Drop.css";
 
+
 class Dropdown extends React.Component {
     constructor() {
         super();
@@ -31,14 +32,12 @@ class Dropdown extends React.Component {
     render() {
         return (
             <div className="dropdown" style={{ width: "200px" }} >
-                <div className="button" onClick={this.showDropdownMenu}>Login/Signup</div>
+                <div className="button" onClick={this.showDropdownMenu}>Sign in</div>
 
                 {this.state.displayMenu ? (
                     <ul>
-                        {/*
                         <li><a className="signup-drop" href="/users/signup">Signup</a></li>
-                        <li><a className="login-drop" href="/users/login">Login</a></li>
-                        */}        
+                        <li><a className="login-drop" href="/users/login">Login</a></li>        
                     </ul>
                 ) :
                     (

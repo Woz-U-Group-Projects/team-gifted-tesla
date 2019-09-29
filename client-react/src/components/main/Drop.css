@@ -38,6 +38,7 @@ li:hover {
     border-radius:5px;
     font-weight:bold;
     color: white;
+    border: solid black 2px;
 }
 
 .button:hover {

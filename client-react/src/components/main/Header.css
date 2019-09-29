@@ -1,0 +1,98 @@
+.outer-container {
+    border: solid #f0decb 2px;
+    background-color: #f0decb;
+    width: 100%;
+    padding: 0;
+}
+
+.outer-container .inner-container {
+    background-color: #f0decb;
+    width: 100%;
+    padding: 0;
+}
+
+.outer-container .inner-container .header-title {
+    background-color: #ffb5b5;
+    box-shadow: 5px 5px 5px grey;
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 15%;
+    text-align: center;
+    border-radius: 20px;
+    -ms-transform: skew(-20deg,-10deg);
+    -webkit-transform: skew(-20deg,-10deg); 
+    transform: skew(-20deg,-5deg);
+}
+
+.outer-container .inner-container .link-container {
+    background-color: #f0decb;
+    padding: 50px;
+    width: 100%;
+}
+
+.outer-container .inner-container .link-container .header-search-text {
+    float: left;
+    background-color: #f0decb;
+    padding-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.outer-container .inner-container .link-container .header-search {
+    float: left;
+    background-color: #ffe0ee;
+    width: 20%;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.outer-container .inner-container .dropdown {
+    background-color: #f0decb;
+    float: right;
+    margin: 5px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+#dropdown-basic {
+    background-color: #ce2e6c;
+    color: white;
+    border: solid #7ea1d9 2px;
+
+}
+
+.outer-container .inner-container .link-container .home-link {
+    float: right;
+    margin: 5px;
+    border: solid #7ea1d9 2px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px grey;
+    background-color: #ce2e6c;
+    color: white;
+    border-radius: 10px;
+}
+
+.outer-container .inner-container .link-container .signup-login-link {
+    float: right;
+    margin: 5px;
+    border: solid #7ea1d9 2px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px grey;
+    background-color: #ce2e6c;
+    color: white;
+    border-radius: 10px;
+}
+
+.outer-container .inner-container .link-container .contactLink {
+    float: right;
+    margin: 5px;
+    border: solid #7ea1d9 2px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px grey;
+    background-color: #ce2e6c;
+    color: white;
+    border-radius: 10px;
+}
