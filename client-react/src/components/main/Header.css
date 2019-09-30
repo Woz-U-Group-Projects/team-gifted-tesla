@@ -57,6 +57,29 @@
     box-shadow: 5px 5px 5px grey;
 }
 
+.outer-container .inner-container .dropdown-products {
+    background-color: #f0decb;
+    float: left;
+    margin-right: 20px;
+    margin-left: -20px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.outer-container .inner-container .dropdown-products .dropdown-basic {
+    width: 200px;
+}
+
+.outer-container .inner-container .dropdown-products .dropdown-menu-products {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.outer-container .inner-container .dropdown .dropdown-menu {
+    width: 100%;
+    margin-right: 30px;
+}
+
 #dropdown-basic {
     background-color: #ce2e6c;
     color: white;

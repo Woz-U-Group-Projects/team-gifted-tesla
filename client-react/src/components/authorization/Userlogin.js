@@ -59,23 +59,30 @@ class Userlogin extends Component {
                 <div className="form-wrapper">
                     <h1 className="form-title">Login</h1>
                     <form className="login-form" onSubmit={this.loginSubmit} noValidate>
-                        <label className="label label-username" htmlFor="username">Username</label>
-                        <input
-                            className="input-username"
-                            placeholder="Username"
-                            type="text"
-                            name="username"
-                        />
-                        <label className="label label-password" htmlFor="password">Password</label>
-                        <input
-                            className="input-password"
-                            placeholder="Password"
-                            type="password"
-                            name="password"
-                        />
-                        <div className="login-createAccount">
+                        <div className="divs">
+                            <label className="label label-username" htmlFor="username">Username</label>
+                            <br />
+                            <input
+                                className="input-username"
+                                placeholder="Username"
+                                type="text"
+                                name="username"
+                            />
+                        </div>
+                        <div className="divs">
+                            <label className="label label-password" htmlFor="password">Password</label>
+                            <br />
+                            <input
+                                className="input-password"
+                                placeholder="Password"
+                                type="password"
+                                name="password"
+                            />
+                        </div>
+                        <div className="login-createAccount divs">
                             {this.renderRedirect()}
                             <button type="submit">Login</button>
+                            <br />
                             <small>Need to create an Account?</small>
                         </div>
                     </form>

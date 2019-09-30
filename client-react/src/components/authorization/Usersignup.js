@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import "./Usersignup.css";
+
+
 import { Redirect } from 'react-router-dom';
 
 const emailRegex = RegExp(
@@ -112,8 +114,9 @@ class Usersignup extends Component {
                 <div className="form-wrapper">
                     <h1 className="header-signup">Create Account</h1>
                     <form className="signup-form" onSubmit={this.handleSubmit} noValidate>
-                        <div className="firstName">
+                        <div className="firstName divs">
                             <label className="label label-firstname" htmlFor="firstName">First Name</label>
+                            <br />
                             <input
                                 className={formErrors.firstName.length > 0 ? "error" : null}
                                 placeholder="First Name"
@@ -122,12 +125,14 @@ class Usersignup extends Component {
                                 noValidate
                                 onChange={this.handleChange}
                             />
+                            <br />
                             {formErrors.firstName.length > 0 && (
                                 <span className="errorMessage">{formErrors.firstName}</span>
                             )}
                         </div>
-                        <div className="lastName">
+                        <div className="lastName divs">
                             <label className="label label-lastname" htmlFor="lastName">Last Name</label>
+                            <br />
                             <input
                                 className={formErrors.lastName.length > 0 ? "error" : null}
                                 placeholder="Last Name"
@@ -136,12 +141,14 @@ class Usersignup extends Component {
                                 noValidate
                                 onChange={this.handleChange}
                             />
+                            <br />
                             {formErrors.lastName.length > 0 && (
                                 <span className="errorMessage">{formErrors.lastName}</span>
                             )}
                         </div>
-                        <div className="email">
+                        <div className="email divs">
                             <label className="label label-email" htmlFor="email">Email</label>
+                            <br />
                             <input
                                 className={formErrors.email.length > 0 ? "error" : null}
                                 placeholder="Email"
@@ -150,12 +157,14 @@ class Usersignup extends Component {
                                 noValidate
                                 onChange={this.handleChange}
                             />
+                            <br />
                             {formErrors.email.length > 0 && (
                                 <span className="errorMessage">{formErrors.email}</span>
                             )}
                         </div>
-                        <div className="username">
+                        <div className="username divs">
                             <label className="label label-username" htmlFor="username">Username</label>
+                            <br />
                             <input
                                 className={formErrors.username.length > 0 ? "error" : null}
                                 placeholder="Username"
@@ -164,12 +173,14 @@ class Usersignup extends Component {
                                 noValidate
                                 onChange={this.handleChange}
                             />
+                            <br />
                             {formErrors.username.length > 0 && (
                                 <span className="errorMessage">{formErrors.username}</span>
                             )}
                         </div>
-                        <div className="password">
+                        <div className="password divs">
                             <label className="label label-password" htmlFor="password">Password</label>
+                            <br />
                             <input
                                 className={formErrors.password.length > 0 ? "error" : null}
                                 placeholder="Password"
@@ -178,12 +189,14 @@ class Usersignup extends Component {
                                 noValidate
                                 onChange={this.handleChange}
                             />
+                            <br />
                             {formErrors.password.length > 0 && (
                                 <span className="errorMessage">{formErrors.password}</span>
                             )}
                         </div>
-                        <div className="createAccount">
+                        <div className="createAccount divs">
                             <button type="submit">Create Account</button>
+                            <br />
                             <small>Already Have an Account?</small>
                         </div>
                     </form>
