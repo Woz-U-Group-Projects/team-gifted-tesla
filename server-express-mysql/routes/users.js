@@ -2,6 +2,9 @@ var express = require('express');
 var router = express.Router();
 var models = require('../models');
 var authService = require('../services/auth');
+var cors = require('cors');
+
+router.use(cors());
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
@@ -9,6 +12,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/signup', function (req, res, next) {
+  const cDate = new Date();
   models.users
     .findOrCreate({
       where: {
@@ -18,7 +22,8 @@ router.post('/signup', function (req, res, next) {
         FirstName: req.body.firstName,
         LastName: req.body.lastName,
         Email: req.body.email,
-        Password: authService.hashPassword(req.body.password)
+        Password: authService.hashPassword(req.body.password),
+        createdAt: cDate
       }
     })
     .spread(function (result, created) {
@@ -48,7 +53,6 @@ router.post('/login', function (req, res, next) {
         let token = authService.signUser(user);
         res.cookie('jwt', token);
         res.send('Login successful');
-        res.redirect(301, 'http://localhost:3001/users/profile');
       } else {
         console.log('Wrong password');
         res.send('Wrong password');

@@ -49,9 +49,10 @@ const Header = props => {
                         </Dropdown.Toggle>
                             <Collapse in={open2}>
                                 <Dropdown.Menu className="dropdown-menu">
-                                    <Dropdown.Item className="dropdown-1" href="/authenticate">Signup or Login</Dropdown.Item>
-                                    <Dropdown.Item className="dropdown-2" href="/authenticate/users/profile">Profile</Dropdown.Item>
-                                    <Dropdown.Item className="dropdown-3" href="/authenticate/users/signout">Sign out</Dropdown.Item>
+                                    <Dropdown.Item className="dropdown-1" href="/signup">Signup</Dropdown.Item>
+                                    <Dropdown.Item className="dropdown-1" href="/login">Login</Dropdown.Item>
+                                    <Dropdown.Item className="dropdown-2" href="/profile">Profile</Dropdown.Item>
+                                    <Dropdown.Item className="dropdown-3" href="/signout">Sign out</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Collapse>
                         </Dropdown>

@@ -1,91 +1,74 @@
-import React, { Component } from 'react';
-import "./Userlogin.css";
-import { Redirect } from 'react-router-dom';
-
-const formValid = ({ ...rest }) => {
-    let valid = true;
-
-    // validate the form was filled out
-    Object.values(rest).forEach(val => {
-        val === null && (valid = false);
-    });
-
-    return valid;
-};
+import React, { Component } from 'react'
+import { login } from './UserFunctions'
 
 class Userlogin extends Component {
-    constructor(props) {
-        super(props);
-
+    constructor() {
+        super()
         this.state = {
-            username: null,
-            password: null,
-            redirect: false
+            username: '',
+            password: '',
+            errors: {}
         }
+
+        this.onChange = this.onChange.bind(this)
+        this.onSubmit = this.onSubmit.bind(this)
     }
 
-    setRedirect = () => {
-        this.setState({ redirect: true })
+    onChange(e) {
+        this.setState({ [e.target.name]: e.target.value })
     }
+    onSubmit(e) {
+        e.preventDefault()
 
-    renderRedirect = () => {
-        if (this.state.redirect) {
-            return <Redirect to="/users/profile" />
+        const user = {
+            username: this.state.username,
+            password: this.state.password
         }
-    }
 
-    loginSubmit = e => {
-        e.preventDefault();
-        fetch('http://localhost:3000/users/login', {
-            method: 'POST',
-            headers: {
-                'Content-type': 'application/json'
-            },
-            body: JSON.stringify(this.state)
+        login(user).then(res => {
+            if (res) {
+                this.props.history.push(`/profile`)
+            }
         })
-            .then((result) => result.json())
-            .then((info) => { console.log(info) })
-
-        if (formValid(this.state)) {
-            this.setState({ redirect: true })
-        } else {
-            console.error("Invalid Login");
-        }
     }
 
     render() {
         return (
-            <div className="wrapper">
-                <div className="form-wrapper">
-                    <h1 className="form-title">Login</h1>
-                    <form className="login-form" onSubmit={this.loginSubmit} noValidate>
-                        <div className="divs">
-                            <label className="label label-username" htmlFor="username">Username</label>
-                            <br />
-                            <input
-                                className="input-username"
-                                placeholder="Username"
-                                type="text"
-                                name="username"
-                            />
-                        </div>
-                        <div className="divs">
-                            <label className="label label-password" htmlFor="password">Password</label>
-                            <br />
-                            <input
-                                className="input-password"
-                                placeholder="Password"
-                                type="password"
-                                name="password"
-                            />
-                        </div>
-                        <div className="login-createAccount divs">
-                            {this.renderRedirect()}
-                            <button type="submit">Login</button>
-                            <br />
-                            <small>Need to create an Account?</small>
-                        </div>
-                    </form>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-6 mt-5 mx-auto">
+                        <form noValidate onSubmit={this.onSubmit}>
+                            <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
+                            <div className="form-group">
+                                <label htmlFor="username">Username</label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    name="username"
+                                    placeholder="Enter Username"
+                                    value={this.state.username}
+                                    onChange={this.onChange}
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="password">Password</label>
+                                <input
+                                    type="password"
+                                    className="form-control"
+                                    name="password"
+                                    placeholder="Password"
+                                    value={this.state.password}
+                                    onChange={this.onChange}
+                                />
+                            </div>
+                            <button
+                                type="submit"
+                                className="btn btn-lg btn-primary btn-block"
+                            >
+                                Sign in
+              </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         )

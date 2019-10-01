@@ -6,7 +6,9 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Header from "./components/main/Header";
 import Home from "./screens/Home";
 import Contact from "./screens/Contact";
-import Authenticate from "./screens/Authenticate";
+import Login from './components/authorization/Userlogin';
+import Signup from './components/authorization/Usersignup';
+import Profile from './components/authorization/Profile';
 
 
 function App() {
@@ -16,8 +18,10 @@ function App() {
         <Header />
         <div className="component-render">
           <Route exact path="/" component={Home} />
-          <Route path="/authenticate" component={Authenticate} />
           <Route path="/contact" component={Contact} />
+          <Route path="/signup" component={Signup} />
+          <Route path="/login" component={Login} />
+          <Route path="/profile" component={Profile} />
         </div>
       </Router>
     </div>
