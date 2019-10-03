@@ -1,0 +1,190 @@
+{
+    "tables": {
+        "graphics": {
+            "tableName": "graphics",
+            "schema": {
+                "GraphicsId": {
+                    "allowNull": false,
+                    "autoIncrement": true,
+                    "primaryKey": true,
+                    "field": "GraphicsId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "GraphicsName": {
+                    "field": "GraphicsName",
+                    "seqType": "Sequelize.STRING"
+                },
+                "GraphicsPrice": {
+                    "field": "GraphicsPrice",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "hdds": {
+            "tableName": "hdds",
+            "schema": {
+                "HddId": {
+                    "allowNull": false,
+                    "autoIncrement": true,
+                    "primaryKey": true,
+                    "field": "HddId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "HddName": {
+                    "field": "HddName",
+                    "seqType": "Sequelize.STRING"
+                },
+                "HddPrice": {
+                    "field": "HddPrice",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "motherboards": {
+            "tableName": "motherboards",
+            "schema": {
+                "MotherboardId": {
+                    "allowNull": false,
+                    "autoIncrement": true,
+                    "primaryKey": true,
+                    "field": "MotherboardId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "MotherboardName": {
+                    "field": "MotherboardName",
+                    "seqType": "Sequelize.STRING"
+                },
+                "MotherboardPrice": {
+                    "field": "MotherboardPrice",
+                    "seqType": "Sequelize.DECIMAL"
+                }
+            },
+            "indexes": []
+        },
+        "processors": {
+            "tableName": "processors",
+            "schema": {
+                "ProcessorId": {
+                    "allowNull": false,
+                    "autoIncrement": true,
+                    "primaryKey": true,
+                    "field": "ProcessorId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "ProcessorName": {
+                    "field": "ProcessorName",
+                    "seqType": "Sequelize.STRING"
+                },
+                "ProcessorPrice": {
+                    "field": "ProcessorPrice",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "Projects": {
+            "tableName": "Projects",
+            "schema": {
+                "id": {
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "name": {
+                    "field": "name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdBy": {
+                    "field": "createdBy",
+                    "seqType": "Sequelize.STRING"
+                }
+            },
+            "indexes": []
+        },
+        "rams": {
+            "tableName": "rams",
+            "schema": {
+                "RamId": {
+                    "allowNull": false,
+                    "autoIncrement": true,
+                    "primaryKey": true,
+                    "field": "RamId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "RamName": {
+                    "field": "RamName",
+                    "seqType": "Sequelize.STRING"
+                },
+                "RamPrice": {
+                    "field": "RamPrice",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "ssds": {
+            "tableName": "ssds",
+            "schema": {
+                "SsdId": {
+                    "allowNull": false,
+                    "autoIncrement": true,
+                    "primaryKey": true,
+                    "field": "SsdId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "SsdName": {
+                    "field": "SsdName",
+                    "seqType": "Sequelize.STRING"
+                },
+                "SsdPrice": {
+                    "field": "SsdPrice",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "users": {
+            "tableName": "users",
+            "schema": {
+                "UserId": {
+                    "allowNull": false,
+                    "autoIncrement": true,
+                    "primaryKey": true,
+                    "field": "UserId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "FirstName": {
+                    "field": "FirstName",
+                    "seqType": "Sequelize.STRING"
+                },
+                "LastName": {
+                    "field": "LastName",
+                    "seqType": "Sequelize.STRING"
+                },
+                "Email": {
+                    "unique": true,
+                    "field": "Email",
+                    "seqType": "Sequelize.STRING"
+                },
+                "Username": {
+                    "unique": true,
+                    "field": "Username",
+                    "seqType": "Sequelize.STRING"
+                },
+                "Password": {
+                    "field": "Password",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "revision": 3
+}
