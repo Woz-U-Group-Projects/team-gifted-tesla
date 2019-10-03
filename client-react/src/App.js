@@ -1,13 +1,29 @@
-import React from "react";
-import Project from "./Project";
+import React, { Component } from "react";
 import "./App.css";
 
-import Motherboards from "./components/datafetchers/Motherboards";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+import Header from "./components/main/Header";
+import Home from "./screens/Home";
+import Contact from "./screens/Contact";
+import Login from './components/authorization/Userlogin';
+import Signup from './components/authorization/Usersignup';
+import UserProfile from './screens/UserProfile';
+
 
 function App() {
   return (
     <div className="App">
-      <Motherboards uri="http://localhost:3000/motherboards/data" />
+      <Router>
+        <Header />
+        <div className="component-render">
+          <Route exact path="/" component={Home} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/signup" component={Signup} />
+          <Route path="/login" component={Login} />
+          <Route path="/profile" component={UserProfile} />
+        </div>
+      </Router>
     </div>
   );
 }
