@@ -98,12 +98,7 @@ class Usersignup extends Component {
                                     onChange={this.onChange}
                                 />
                             </div>
-                            <button
-                                type="submit"
-                                className="btn btn-lg btn-primary btn-block"
-                            >
-                                Register!
-              </button>
+                            <button type="submit" className="btn btn-lg btn-primary btn-block">Register!</button>
                         </form>
                     </div>
                 </div>

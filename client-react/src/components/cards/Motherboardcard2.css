@@ -1,0 +1,51 @@
+.motherboard-2-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+/* Image */
+
+.motherboard-2-image {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/*Button */
+.motherboard-2-button {
+    position: absolute;
+    left: 110px;
+    bottom: 10px;
+    height: 35px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px grey;
+    background-color: gold;
+    border-color: black;
+    color: black;
+    transition: 0.2s;
+}
+
+.motherboard-2-button:hover {
+    width: 40.2%;
+    height: 40px;
+    color: white;
+    background-color: rgb(255, 221, 31)
+}
+
+/* Name */
+.motherboard-2-name {
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 20px;
+}
+
+/* Price */
+.motherboard-2-price {
+    font-size: 20px;
+    font-family: 'Monsterrat', sans-serif;
+    position: absolute;
+    bottom: 40px;
+    left: 140px;
+}

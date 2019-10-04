@@ -1,0 +1,25 @@
+.motherboardTitle {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.motherboard-title-text {
+    margin-left: 400px;
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 30px;
+    background-color: #f0decb;
+    width: 60%;
+    transform: skew(-30deg, 0deg);
+    padding-left: 20px;
+}
+
+.motherboard-special-text {
+    float: right;
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 30px;
+    background-color: gold;
+    width: 20%;
+    transform: skew(0deg, 0deg);
+    padding-left: 20px;
+}

@@ -39,7 +39,8 @@ const Header = props => {
                             </Collapse>
                         </Dropdown>
                         <p className="header-search-text">Looking for something?</p>
-                        <input className="header-search" placeholder="Search" />
+                        <input className="header-search" placeholder="Search Here" />
+                        <button className="header-search-button"><i className="fa fa-search"></i></button>
                         <Dropdown className="dropdown"
                             onClick={() => setOpen2(!open2)}
                             aria-controls="example-fade-text"

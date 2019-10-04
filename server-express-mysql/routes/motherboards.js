@@ -5,12 +5,12 @@ var Sequelize = require('sequelize');
 var Op = Sequelize.Op;
 
 
-//Get All Motherboards for Home page
-router.get('/data', function (req, res, next) {
+//Get single motherboard
+router.get('/data1', function (req, res, next) {
     models.motherboards.findAll({
         where: {
             MotherboardId: {
-                [Op.lt]: 7
+                [Op.lt]: 2
             }
         }
     }).then(motherboardsFound => {
@@ -19,6 +19,33 @@ router.get('/data', function (req, res, next) {
     });
 });
 
+router.get('/data2', function (req, res, next) {
+    models.motherboards.findAll({
+        where: {
+            MotherboardId: {
+                [Op.gt]: 1,
+                [Op.lt]: 3
+            }
+        }
+    }).then(motherboardsFound => {
+        res.setHeader('Content-Type', 'application/json');
+        res.send(JSON.stringify(motherboardsFound));
+    });
+});
+
+router.get('/data3', function (req, res, next) {
+    models.motherboards.findAll({
+        where: {
+            MotherboardId: {
+                [Op.gt]: 2,
+                [Op.lt]: 4
+            }
+        }
+    }).then(motherboardsFound => {
+        res.setHeader('Content-Type', 'application/json');
+        res.send(JSON.stringify(motherboardsFound));
+    });
+});
 
 //Get Motherboards by ID for specific pages
 router.get('/data/:id', function (req, res, next) {
