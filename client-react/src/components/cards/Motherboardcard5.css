@@ -1,4 +1,4 @@
-.motherboard-1-container {
+.motherboard-5-container {
     width: 100%;
     height: 400px;
     margin-top: 20px;
@@ -6,7 +6,7 @@
 
 /* Image */
 
-.motherboard-1-image {
+.motherboard-5-image {
     width: 80%;
     height: 50%;
     margin: auto;
@@ -14,7 +14,7 @@
 }
 
 /*Button */
-.motherboard-1-button {
+.motherboard-5-button {
     position: absolute;
     left: 110px;
     bottom: 10px;
@@ -28,7 +28,7 @@
     transition: 0.2s;
 }
 
-.motherboard-1-button:hover {
+.motherboard-5-button:hover {
     width: 40.2%;
     height: 40px;
     color: white;
@@ -36,16 +36,16 @@
 }
 
 /* Name */
-.motherboard-1-name {
+.motherboard-5-name {
     font-family: 'Monsterrat', sans-serif;
     font-size: 20px;
     text-align: center;
 }
 
 /* Price */
-.motherboard-1-price {
+.motherboard-5-price {
     font-size: 20px;
     font-family: 'Monsterrat', sans-serif;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { register } from './UserFunctions'
+import "./Usersignup.css";
 
 class Usersignup extends Component {
     constructor() {
@@ -40,55 +41,55 @@ class Usersignup extends Component {
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6 mt-5 mx-auto">
-                        <form noValidate onSubmit={this.onSubmit}>
-                            <h1 className="h3 mb-3 font-weight-normal">Register</h1>
+                    <div className="inner-row">
+                        <form className="form-signup" noValidate onSubmit={this.onSubmit}>
+                            <h1 className="form-header">Register</h1>
                             <div className="form-group">
-                                <label htmlFor="name">First name</label>
+                                <label className="label-text" htmlFor="name">First name</label>
                                 <input
                                     type="text"
                                     className="form-control"
                                     name="firstName"
-                                    placeholder="Enter your first name"
+                                    placeholder="First Name"
                                     value={this.state.firstName}
                                     onChange={this.onChange}
                                 />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="name">Last name</label>
+                                <label className="label-text" htmlFor="name">Last name</label>
                                 <input
                                     type="text"
                                     className="form-control"
                                     name="lastName"
-                                    placeholder="Enter your lastname name"
+                                    placeholder="Last Name"
                                     value={this.state.lastName}
                                     onChange={this.onChange}
                                 />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="email">Email address</label>
+                                <label className="label-text" htmlFor="email">Email address</label>
                                 <input
                                     type="email"
                                     className="form-control"
                                     name="email"
-                                    placeholder="Enter email"
+                                    placeholder="Email"
                                     value={this.state.email}
                                     onChange={this.onChange}
                                 />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="username">Username</label>
+                                <label className="label-text" htmlFor="username">Username</label>
                                 <input
                                     type="text"
                                     className="form-control"
                                     name="username"
-                                    placeholder="Enter Username"
+                                    placeholder="Username"
                                     value={this.state.username}
                                     onChange={this.onChange}
                                 />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="password">Password</label>
+                                <label className="label-text" htmlFor="password">Password</label>
                                 <input
                                     type="password"
                                     className="form-control"

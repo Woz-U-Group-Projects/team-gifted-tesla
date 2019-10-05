@@ -3,6 +3,8 @@ var router = express.Router();
 var models = require('../models');
 var authService = require('../services/auth');
 
+
+
 router.post('/signup', function (req, res, next) {
   models.users.findOrCreate({
     where: { Username: req.body.username },
@@ -25,6 +27,7 @@ router.post('/signup', function (req, res, next) {
 router.post('/login', function (req, res, next) {
   models.users.findOne({ Username: req.body.username, Password: req.body.password })
     .then(user => {
+      console.log(user);
       if (!user) {
         console.log('User not found');
         return res.status(401).json({ message: 'Login Failed' });
@@ -42,6 +45,7 @@ router.get('/profile', function (req, res, next) {
     authService.verifyUser(token)
       .then(user => {
         if (user) {
+          console.log(JSON.stringify(user));
           res.setHeader('Content-Type', 'application/json');
           res.send(JSON.stringify(user));
         } else {

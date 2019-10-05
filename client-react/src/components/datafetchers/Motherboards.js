@@ -31,15 +31,13 @@ class Motherboards extends React.Component {
         }
 
         const motherboards = this.state.motherboardData.map(motherboard => (
-            <Col className="col-motherboard-1">
-                <div className="gridRender-motherboard" key={motherboard.MotherboardId}>
-                    <div className="inner-grid-motherboard"><strong>{motherboard.MotherboardName}</strong></div>
-                    <div className="price-motherboard">${motherboard.MotherboardPrice}</div>
-                    <div className="motherboard-center-button">
-                        <button className="buy-button-motherboard">Buy Now</button>
-                    </div>
+            <div className="gridRender-motherboard" key={motherboard.MotherboardId}>
+                <div className="inner-grid-motherboard"><strong>{motherboard.MotherboardName}</strong></div>
+                <div className="price-motherboard">${motherboard.MotherboardPrice}</div>
+                <div className="motherboard-center-button">
+                    <button className="buy-button-motherboard">Buy Now</button>
                 </div>
-            </Col>
+            </div>
         ));
         return <Container><Row>{motherboards}</Row></Container>
     }

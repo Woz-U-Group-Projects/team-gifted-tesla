@@ -7,11 +7,14 @@ class Profilefetch extends React.Component {
     };
 
     fetchProfileData = () => {
+        const profile = axios.create({
+            withCredentials: true
+        });
         var encodedURI = window.encodeURI(this.props.uri);
-        return axios.get(encodedURI).then(response => {
+        return profile.get('http://localhost:3000/users/profile').then(response => {
             this.setState(() => {
                 return {
-                    profileData: response.data
+                    profileData: [response.data]
                 };
             });
         });
@@ -22,7 +25,7 @@ class Profilefetch extends React.Component {
     };
 
     render() {
-        console.log(this.state.profileData);
+        console.log(this.state.profileData[0]);
         if (this.state.profileData.length === 0) {
             return <div>Failed to fetch data from server</div>;
         }
@@ -31,7 +34,7 @@ class Profilefetch extends React.Component {
             <div className="">
                 <div className="" key={profile.UserId}>
                     <div className="">{profile.FirstName}</div>
-                    <div className="">${profile.LastName}</div>
+                    <div className="">{profile.LastName}</div>
                 </div>
             </div>
         ));
@@ -39,4 +42,4 @@ class Profilefetch extends React.Component {
     }
 }
 
-export default Profilefetch
+export default Profilefetch;

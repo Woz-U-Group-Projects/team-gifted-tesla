@@ -39,13 +39,13 @@
 .motherboard-3-name {
     font-family: 'Monsterrat', sans-serif;
     font-size: 20px;
+    text-align: center;
 }
 
 /* Price */
 .motherboard-3-price {
     font-size: 20px;
     font-family: 'Monsterrat', sans-serif;
-    position: absolute;
-    bottom: 40px;
-    left: 140px;
+    text-align: center;
+    margin-top: 50px;
 }

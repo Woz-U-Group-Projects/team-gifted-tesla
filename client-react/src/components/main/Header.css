@@ -138,3 +138,11 @@
     background-color: #ce2e6c;
     border: dotted #7ea1d9 2px;
 }
+
+/* CSS Responsive */
+@media only screen and (min-width: 200) {
+    /* Mobile Devices */
+    .outer-container {
+        width: 100%;
+    }
+}

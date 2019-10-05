@@ -4,13 +4,13 @@
     height: 100%;
 }
 
-.inner-grid-motherboard {
+.gridRender-motherboard .inner-grid-motherboard {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
 
 /* Button */
-.buy-button-motherboard {
+.gridRender-motherboard .buy-button-motherboard {
     position: absolute;
     left: 110px;
     bottom: 10px;
@@ -24,7 +24,7 @@
     transition: 0.2s;
 }
 
-.buy-button-motherboard:hover {
+.gridRender-motherboard .buy-button-motherboard:hover {
     width: 40.2%;
     height: 40px;
     color: white;
@@ -32,7 +32,7 @@
 }
 
 /* Price */
-.price-motherboard {
+.gridRender-motherboard .price-motherboard {
     position: absolute;
     font-family: 'Monsterrat', sans-serif;
     font-size: 20px;
