@@ -12,6 +12,7 @@ import Motherboardcard6 from "../cards/Motherboardcard6";
 import Motherboardcard7 from "../cards/Motherboardcard7";
 import Motherboardcard8 from "../cards/Motherboardcard8";
 import Motherboardview from "../cards/Motherboardview";
+import SlideshowMobile from "./SlideMotherboardMobile";
 
 
 
@@ -27,7 +28,7 @@ export default class Slideshow extends Component {
     };
     return (
       <div className="slider-container-main">
-        <Slider {...settings}>
+        <Slider className="slider-component" {...settings}>
           <div className="each-div">
             <Motherboardcard1 uri="http://localhost:3000/motherboards/data1" />
           </div>
@@ -56,6 +57,7 @@ export default class Slideshow extends Component {
             <Motherboardview />
           </div>
         </Slider>
+        <SlideshowMobile className="test" />
       </div>
     );
   }

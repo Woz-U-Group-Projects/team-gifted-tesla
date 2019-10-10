@@ -1,5 +1,7 @@
 .slider-container-main {
-    margin-top: -80px;
+    width: 100%;
+    height: 600px;
+    margin-top: -100px;
 }
 
 .slick-prev {
@@ -62,4 +64,10 @@
 
 .slick-dots .slick-active button {
     background-color: gold;
+}
+
+@media (max-width: 800px) {
+    .slider-component {
+        visibility: hidden;
+    }   
 }

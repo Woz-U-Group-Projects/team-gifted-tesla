@@ -1,0 +1,181 @@
+[class*='-col'] {
+    float: left;
+}
+
+[class*='nav-grid'] {
+    float: left;
+}
+
+.footer-container {
+    background-color: #f0decb;
+    width: 100%;
+}
+
+.footer-container .footer-about-col {
+    width: 33.4%;
+    height: 200px;
+    background-color: #f0decb;
+}
+
+.footer-container .footer-about-col .h3-title {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.footer-container .footer-about-col p {
+    padding-left: 10px;
+}
+
+.footer-container .footer-links-col {
+    width: 33.3%;
+    height: 200px;
+    text-align: center;
+    background-color: #f0decb;
+}
+
+.footer-container .footer-navigation-col {
+    width: 33.3%;
+    height: 200px;
+    background-color: #f0decb;
+}
+
+.footer-container .footer-links-col .linked-link {
+    font-size: 100px;
+    color: #0077B5;
+    margin: 10px;
+}
+
+.footer-container .footer-links-col .github-link {
+    font-size: 100px;
+    color: #333;
+    margin: 10px;
+}
+
+.footer-container .footer-navigation-col ul {
+    list-style-type: none;
+}
+
+.footer-container .footer-navigation-col .navigation-title {
+    text-align: center;
+}
+
+.footer-container .footer-navigation-col .nav-grid-1 {
+    width: 50%;
+}
+
+.footer-container .footer-navigation-col .nav-grid-2 {
+    width: 50%;
+}
+
+.footer-container .footer-navigation-col .list-1 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.footer-container .footer-navigation-col .list-2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 100px;
+}
+
+.footer-container .footer-navigation-col .footer-nav {
+    color: black;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container .footer-navigation-col .footer-nav:hover {
+    color: blue;
+}
+
+@media (max-width: 600px) {
+    [class*='nav-grid'] {
+        float: none;
+    }
+
+    .footer-container {
+        height: 800px;
+    }
+
+    .footer-container .navigation-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .footer-container .h3-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .footer-container .list-1 .footer-nav {
+        font-size: 20px;
+    }
+
+    .footer-container .list-2 .footer-nav {
+        font-size: 20px;
+    }
+
+    .footer-container .nav-grid-1 .list-1 {
+        margin: 0;
+        text-align: left;
+    }
+
+    .footer-container .nav-grid-2 .list-2 {
+        margin: 0;
+        text-align: left;
+    }
+}
+
+@media (max-width: 400px) {
+    [class*='nav-grid'] {
+        float: none;
+    }
+
+    .footer-container {
+        height: 700px;
+    }
+
+    .footer-container .navigation-title {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .footer-container .list-1 .footer-nav {
+        font-size: 15px;
+    }
+
+    .footer-container .list-2 .footer-nav {
+        font-size: 15px;
+
+    }
+
+    .footer-container .nav-grid-1 .list-1 {
+        margin: 0;
+        text-align: left;
+    }
+
+    .footer-container .nav-grid-2 .list-2 {
+        margin: 0;
+        text-align: left;
+    }
+
+    .footer-container .h3-title {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .footer-container p {
+        font-size: 15px;
+    }
+
+    .footer-container .footer-links-col .linked-link {
+        font-size: 50px;
+    }
+
+    .footer-container .footer-links-col .github-link {
+        font-size: 50px;
+    }
+}

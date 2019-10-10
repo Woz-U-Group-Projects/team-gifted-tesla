@@ -9,6 +9,8 @@ import Contact from "./screens/Contact";
 import Login from './components/authorization/Userlogin';
 import Signup from './components/authorization/Usersignup';
 import UserProfile from './screens/UserProfile';
+import ListMotherboards from "./screens/ListMotherboards";
+import FooterComponent from "./components/main/Footer";
 
 
 function App() {
@@ -22,7 +24,9 @@ function App() {
           <Route path="/signup" component={Signup} />
           <Route path="/login" component={Login} />
           <Route path="/profile" component={UserProfile} />
+          <Route path="/motherboards" component={ListMotherboards} />
         </div>
+        <FooterComponent />
       </Router>
     </div>
   );

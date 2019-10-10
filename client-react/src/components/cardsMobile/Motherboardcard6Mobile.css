@@ -1,31 +1,31 @@
-.motherboard-5-container {
+.motherboard-6-container-mobile {
     width: 100%;
-    margin-top: 116px;
+    margin-top: 50px;
 }
 
-.motherboard-5-id {
+.motherboard-6-id-mobile {
     text-align: center;
 }
 
 /* Image */
 
-.motherboard-5-image {
+.motherboard-6-image-mobile {
     width: 80%;
     height: 80%;
     margin: auto;
 }
 
 /* Name */
-.motherboard-5-name {
+.motherboard-6-name-mobile {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     padding: 0;
     margin: 0;
     border-bottom: solid black 1px;
 }
 
 /* Price */
-.motherboard-5-price {
+.motherboard-6-price-mobile {
     font-family: 'Monsterrat', sans-serif;
     font-size: 20px;
     margin: 0;
@@ -34,14 +34,14 @@
 }
 
 /*Button */
-.motherboard-5-button {
+.motherboard-6-button-mobile {
     border: solid black 2px;
     background-color: gold;
     border-radius: 10px;
     color: black;
 }
 
-.motherboard-5-button:hover {
+.motherboard-6-button-mobile:hover {
     color: white;
 }
 

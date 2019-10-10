@@ -1,25 +1,68 @@
 .motherboardTitle {
-    padding: 0;
-    margin: 0;
-    margin-top: 20px;
+    width: 100%;
 }
 
-.motherboard-title-text {
-    margin-left: 400px;
+.motherboardTitle  .motherboard-title-text {
     font-family: 'Monsterrat', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     background-color: #f0decb;
-    width: 60%;
+    width: 80%;
     transform: skew(-30deg, 0deg);
-    padding-left: 20px;
+    border: solid black 2px;
+    margin: auto;
+    margin-top: 40px;
 }
 
-.motherboard-special-text {
-    float: right;
+.motherboardTitle .motherboard-title-text .motherboard-special-text {
     font-family: 'Monsterrat', sans-serif;
-    font-size: 30px;
+    font-size: 15px;
     background-color: gold;
-    width: 20%;
+    width: 10%;
     transform: skew(0deg, 0deg);
-    padding-left: 20px;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+@media (max-width: 1200px) {
+    .motherboardTitle .motherboard-title-text {
+        width: 80%;
+    }
+
+    .motherboardTitle .motherboard-title-text .motherboard-special-text {
+        width: 15%;
+    }
+}
+
+@media (max-width: 800px) {
+    .motherboardTitle .motherboard-title-text {
+        width: 80%;
+    }
+
+    .motherboardTitle .motherboard-title-text .motherboard-special-text {
+        width: 20%;
+    }
+}
+
+@media (max-width: 600px) {
+    .motherboardTitle .motherboard-title-text {
+        width: 80%;
+    }
+
+    .motherboardTitle .motherboard-title-text .motherboard-special-text {
+        width: 30%;
+    }
+}
+
+@media (max-width: 400px) {
+    .motherboardTitle .motherboard-title-text {
+        width: 80%;
+    }
+
+    .motherboardTitle .motherboard-title-text .motherboard-special-text {
+        width: 30%;
+        font-size: 10px;
+        margin-top: 7px;
+    }
 }

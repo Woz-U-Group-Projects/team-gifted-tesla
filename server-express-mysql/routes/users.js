@@ -17,6 +17,7 @@ router.post('/signup', function (req, res, next) {
   })
     .spread(function (result, created) {
       if (created) {
+        console.log(result);
         res.send('User Successfully Created');
       } else {
         res.send('This user')
@@ -27,7 +28,6 @@ router.post('/signup', function (req, res, next) {
 router.post('/login', function (req, res, next) {
   models.users.findOne({ Username: req.body.username, Password: req.body.password })
     .then(user => {
-      console.log(user);
       if (!user) {
         console.log('User not found');
         return res.status(401).json({ message: 'Login Failed' });
@@ -35,6 +35,7 @@ router.post('/login', function (req, res, next) {
         let token = authService.signUser(user);
         res.cookie('jwt', token);
         res.send('Login Successful');
+        console.log(user, token);
       }
     });
 });
@@ -42,9 +43,11 @@ router.post('/login', function (req, res, next) {
 router.get('/profile', function (req, res, next) {
   let token = req.cookies.jwt;
   if (token) {
+    console.log(token);
     authService.verifyUser(token)
       .then(user => {
         if (user) {
+          console.log(user);
           console.log(JSON.stringify(user));
           res.setHeader('Content-Type', 'application/json');
           res.send(JSON.stringify(user));
