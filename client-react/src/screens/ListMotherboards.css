@@ -1,3 +1,26 @@
+.list-header-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid black;
+}
+
 .spacer {
     margin-bottom: 50px;
+}
+
+.col-test {
+    width: 33.3%;
+}
+
+@media (max-width: 750px) {
+    .col-test {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .col-test {
+        border: none;
+    }
 }

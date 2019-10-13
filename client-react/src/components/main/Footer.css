@@ -9,6 +9,8 @@
 .footer-container {
     background-color: #f0decb;
     width: 100%;
+    margin-top: 200px;
+    height: 300px;
 }
 
 .footer-container .footer-about-col {
@@ -48,7 +50,7 @@
 .footer-container .footer-links-col .github-link {
     font-size: 100px;
     color: #333;
-    margin: 10px;
+    margin: 10px
 }
 
 .footer-container .footer-navigation-col ul {
@@ -89,6 +91,35 @@
 
 .footer-container .footer-navigation-col .footer-nav:hover {
     color: blue;
+}
+
+@media (max-width: 1200px) {
+    .footer-container {
+        height: 500px;
+    }
+
+    .footer-container .navigation-title {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .footer-container .h3-title {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .footer-container .list-1 .footer-nav {
+        font-size: 20px;
+    }
+
+    .footer-container .list-2 .footer-nav {
+        font-size: 20px;
+    }
+    
+    .footer-container .nav-grid-1 .list-1 {
+        margin: 0;
+        text-align: left;
+    }
 }
 
 @media (max-width: 600px) {
@@ -149,7 +180,6 @@
 
     .footer-container .list-2 .footer-nav {
         font-size: 15px;
-
     }
 
     .footer-container .nav-grid-1 .list-1 {

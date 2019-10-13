@@ -1,33 +1,36 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "./ListMotherboards.css";
 
 import { Container, Row, Col } from 'react-bootstrap';
 
-import Motherboardcard1 from "../components/cards/Motherboardcard1";
-import Motherboardcard2 from "../components/cards/Motherboardcard2";
-import Motherboardcard3 from "../components/cards/Motherboardcard3";
-import Motherboardcard4 from "../components/cards/Motherboardcard4";
-import Motherboardcard5 from "../components/cards/Motherboardcard5";
-import Motherboardcard6 from "../components/cards/Motherboardcard6";
-import Motherboardcard7 from "../components/cards/Motherboardcard7";
-import Motherboardcard8 from "../components/cards/Motherboardcard8";
+import ViewMotherboardcard1 from "../components/viewallMotherboards/ViewMotherboardcard1"
+import ViewMotherboardcard2 from "../components/viewallMotherboards/ViewMotherboardcard2"
+import ViewMotherboardcard3 from "../components/viewallMotherboards/ViewMotherboardcard3"
+import ViewMotherboardcard4 from "../components/viewallMotherboards/ViewMotherboardcard4"
+import ViewMotherboardcard5 from "../components/viewallMotherboards/ViewMotherboardcard5"
+import ViewMotherboardcard6 from "../components/viewallMotherboards/ViewMotherboardcard6"
+import ViewMotherboardcard7 from "../components/viewallMotherboards/ViewMotherboardcard7"
+import ViewMotherboardcard8 from "../components/viewallMotherboards/ViewMotherboardcard8"
+import ViewMotherboardcard9 from "../components/viewallMotherboards/ViewMotherboardcard9"
 
 const ListMotherboards = props => {
     return (
-        <Container>
+        <Container className="container">
+            <h3 className="list-header-title">Motherboards</h3>
             <Row>
-                <Col><Motherboardcard1 uri="http://localhost:3000/motherboards/data1" /></Col>
-                <Col><Motherboardcard2 uri="http://localhost:3000/motherboards/data2" /></Col>
-                <Col><Motherboardcard3 uri="http://localhost:3000/motherboards/data3" /></Col>
+                <div className="col-test"><Col><ViewMotherboardcard1 uri="http://localhost:3000/motherboards/data1" /></Col></div>
+                <div className="col-test"><Col><ViewMotherboardcard2 uri="http://localhost:3000/motherboards/data2" /></Col></div>
+                <div className="col-test"><Col><ViewMotherboardcard3 uri="http://localhost:3000/motherboards/data3" /></Col></div>
             </Row>
             <Row>
-                <Col><Motherboardcard4 uri="http://localhost:3000/motherboards/data4" /></Col>
-                <Col><Motherboardcard5 uri="http://localhost:3000/motherboards/data5" /></Col>
-                <Col><Motherboardcard6 uri="http://localhost:3000/motherboards/data6" /></Col>
+                <div className="col-test"><Col><ViewMotherboardcard4 uri="http://localhost:3000/motherboards/data4" /></Col></div>
+                <div className="col-test"><Col><ViewMotherboardcard5 uri="http://localhost:3000/motherboards/data5" /></Col></div>
+                <div className="col-test"><Col><ViewMotherboardcard6 uri="http://localhost:3000/motherboards/data6" /></Col></div>
             </Row>
             <Row>
-                <Col><Motherboardcard7 uri="http://localhost:3000/motherboards/data7" /></Col>
-                <Col><Motherboardcard8 uri="http://localhost:3000/motherboards/data8" /></Col>
+                <div className="col-test"><Col><ViewMotherboardcard7 uri="http://localhost:3000/motherboards/data7" /></Col></div>
+                <div className="col-test"><Col><ViewMotherboardcard8 uri="http://localhost:3000/motherboards/data8" /></Col></div>
+                <div className="col-test"><Col><ViewMotherboardcard9 uri="http://localhost:3000/motherboards/data9" /></Col></div>
             </Row>
             <Row>
                 <Col>

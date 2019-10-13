@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React from 'react';
+import "./Contact.css";
+
+import Contactform from "../components/message/Contactform";
 
 const Contact = props => {
     return (
-        <div>
-            <h1>Contact</h1>
-        </div>
+        <Contactform />
     )
 }
 

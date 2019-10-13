@@ -1,0 +1,71 @@
+.graphicTitle {
+    width: 100%;
+}
+
+.graphicTitle  .graphic-title-text {
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 20px;
+    background-color: #f0decb;
+    width: 80%;
+    transform: skew(-30deg, 0deg);
+    border: solid black 2px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.graphicTitle .graphic-special-text {
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 15px;
+    background-color: gold;
+    width: 10%;
+    transform: skew(0deg, 0deg);
+    float: right;
+    text-align: right;
+    margin-right: 208px;
+    transform: skew(-30deg, 0deg);
+    border: solid black 2px;
+    border-top: none;
+    padding-right: 10px;
+}
+
+@media (max-width: 1200px) {
+    .graphicTitle .graphic-title-text {
+        width: 80%;
+    }
+
+    .graphicTitle .graphic-title-text .graphic-special-text {
+        width: 15%;
+    }
+}
+
+@media (max-width: 800px) {
+    .graphicTitle .graphic-title-text {
+        width: 80%;
+    }
+
+    .graphicTitle .graphic-title-text .graphic-special-text {
+        width: 20%;
+    }
+}
+
+@media (max-width: 600px) {
+    .graphicTitle .graphic-title-text {
+        width: 80%;
+    }
+
+    .graphicTitle .graphic-title-text .graphic-special-text {
+        width: 30%;
+    }
+}
+
+@media (max-width: 400px) {
+    .graphicTitle .graphic-title-text {
+        width: 80%;
+    }
+
+    .graphicTitle .graphic-title-text .graphic-special-text {
+        width: 30%;
+        font-size: 10px;
+        margin-top: 7px;
+    }
+}

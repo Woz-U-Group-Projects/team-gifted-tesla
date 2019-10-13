@@ -69,15 +69,10 @@
     visibility: hidden;
 }
 
-
-
-@media (max-width: 800px) {
-
-}
-
 @media (max-width: 800px) {
     .slider-container-main-mobile {
         margin-top: -600px;
+        width: 100%;
     }
 
     .slider-container-main-mobile .slider-component-mobile {
@@ -90,6 +85,9 @@
     
     .slick-next {
         visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 
     .slick-dots li button {

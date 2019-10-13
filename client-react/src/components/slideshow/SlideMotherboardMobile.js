@@ -3,15 +3,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "./SlideMotherboardMobile.css";
 
-import Motherboardcard1Mobile from "../cardsMobile/Motherboardcard1Mobile";
-import Motherboardcard2Mobile from "../cardsMobile/Motherboardcard2Mobile";
-import Motherboardcard3Mobile from "../cardsMobile/Motherboardcard3Mobile";
-import Motherboardcard4Mobile from "../cardsMobile/Motherboardcard4Mobile";
-import Motherboardcard5Mobile from "../cardsMobile/Motherboardcard5Mobile";
-import Motherboardcard6Mobile from "../cardsMobile/Motherboardcard6Mobile";
-import Motherboardcard7Mobile from "../cardsMobile/Motherboardcard7Mobile";
-import Motherboardcard8Mobile from "../cardsMobile/Motherboardcard8Mobile";
-import MotherboardviewMobile from "../cardsMobile/MotherboardviewMobile";
+import Motherboardcard1Mobile from "../cardsMobile/MotherboardMobile/Motherboardcard1Mobile";
+import Motherboardcard2Mobile from "../cardsMobile/MotherboardMobile/Motherboardcard2Mobile";
+import Motherboardcard3Mobile from "../cardsMobile/MotherboardMobile/Motherboardcard3Mobile";
+import Motherboardcard4Mobile from "../cardsMobile/MotherboardMobile/Motherboardcard4Mobile";
+import Motherboardcard5Mobile from "../cardsMobile/MotherboardMobile/Motherboardcard5Mobile";
+import Motherboardcard6Mobile from "../cardsMobile/MotherboardMobile/Motherboardcard6Mobile";
+import Motherboardcard7Mobile from "../cardsMobile/MotherboardMobile/Motherboardcard7Mobile";
+import Motherboardcard8Mobile from "../cardsMobile/MotherboardMobile/Motherboardcard8Mobile";
+import MotherboardviewMobile from "../cardsMobile/MotherboardMobile/MotherboardviewMobile";
 
 
 export default class SlideshowMobile extends Component {

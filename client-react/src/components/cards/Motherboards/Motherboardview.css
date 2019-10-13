@@ -1,0 +1,32 @@
+.view-card-inner {
+    border: solid red 2px;
+    height: 360px;
+    margin-top: 166px;
+}
+
+.view-all-motherboard {
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 100%;
+    width: 100px;;
+    height: 100px;
+    background-color: gold;
+    border: dotted #ce2e6c;
+    transition: 0.3s;
+}
+
+.view-all-motherboard:hover {
+    width: 120px;
+    height: 120px;
+}
+
+.view-all-motherboard .fa {
+    font-size: 30px;
+}
+
+.view-motherboard-text {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Monsterrat', sans-serif;
+}

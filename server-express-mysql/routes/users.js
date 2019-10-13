@@ -12,7 +12,7 @@ router.post('/signup', function (req, res, next) {
       FirstName: req.body.firstName,
       LastName: req.body.lastName,
       Email: req.body.email,
-      Password: req.body.password
+      Password: authService.hashPassword(req.body.password)
     }
   })
     .spread(function (result, created) {
@@ -26,18 +26,28 @@ router.post('/signup', function (req, res, next) {
 });
 
 router.post('/login', function (req, res, next) {
-  models.users.findOne({ Username: req.body.username, Password: req.body.password })
-    .then(user => {
-      if (!user) {
-        console.log('User not found');
-        return res.status(401).json({ message: 'Login Failed' });
-      } else {
+  models.users.findOne({
+    where: {
+      Username: req.body.username
+    }
+  }).then(user => {
+    if (!user) {
+      console.log('User not found')
+      return res.status(401).json({
+        message: "Login Failed"
+      });
+    } else {
+      let passwordMatch = authService.comparePasswords(req.body.password, user.Password);
+      if (passwordMatch) {
         let token = authService.signUser(user);
         res.cookie('jwt', token);
-        res.send('Login Successful');
-        console.log(user, token);
+        res.send('Login successful');
+      } else {
+        console.log('Wrong password');
+        res.send('Wrong password');
       }
-    });
+    }
+  });
 });
 
 router.get('/profile', function (req, res, next) {

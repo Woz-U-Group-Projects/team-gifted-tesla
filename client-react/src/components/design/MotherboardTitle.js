@@ -5,8 +5,8 @@ class MotherboardTitle extends Component {
     render() {
         return (
             <div className="motherboardTitle">
-                <p className="motherboard-title-text">Motherboards<p className="motherboard-special-text">Special Deals</p></p>
-
+                <p className="motherboard-title-text">Motherboards</p>
+                <p className="motherboard-special-text">Special Deals</p>
             </div>
         )
     }

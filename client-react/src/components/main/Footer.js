@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./Footer.css";
 
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Link } from 'react-router-dom';
 
 
 class FooterComponent extends Component {
@@ -32,8 +32,8 @@ class FooterComponent extends Component {
                     </ul>
                 </div>
                 <div className="footer-links-col">
-                    <a className="linked-link" target="_blank" href="https://www.linkedin.com/in/nolan-harman-6ba784183/"><i class="fab fa-linkedin"></i></a>
-                    <a className="github-link" target="_blank" href="https://github.com/DriAzz"><i class="fab fa-github"></i></a>
+                    <a className="linked-link" target="_blank" href="https://www.linkedin.com/in/nolan-harman-6ba784183/"><i className="fab fa-linkedin"></i></a>
+                    <a className="github-link" target="_blank" href="https://github.com/DriAzz"><i className="fab fa-github"></i></a>
                 </div>
             </footer>
         )

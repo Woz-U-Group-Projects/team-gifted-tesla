@@ -1,0 +1,47 @@
+.graphic-6-container-mobile {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.graphic-6-id-mobile {
+    text-align: center;
+}
+
+/* Image */
+
+.graphic-6-image-mobile {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+/* Name */
+.graphic-6-name-mobile {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    border-bottom: solid black 1px;
+}
+
+/* Price */
+.graphic-6-price-mobile {
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/*Button */
+.graphic-6-button-mobile {
+    border: solid black 2px;
+    background-color: gold;
+    border-radius: 10px;
+    color: black;
+}
+
+.graphic-6-button-mobile:hover {
+    color: white;
+}
+

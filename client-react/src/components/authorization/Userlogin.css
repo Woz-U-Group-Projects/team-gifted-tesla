@@ -1,5 +1,6 @@
 .container {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .container .row .inner-row {
@@ -18,7 +19,7 @@
 
 .container .row .inner-row .form-login .form-header {
     text-align: center;
-    font-family: 'Monsterrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-shadow: 0px 2px 5px grey;
     border-bottom: solid #ce2e6c 5px;
     width: 50%;
@@ -35,7 +36,7 @@
 
 .container .row .inner-row .form-login .form-group .label-text {
     font-size: 20px;
-    font-family: 'Monsteratt', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border-bottom: solid #ce2e6c 5px;
     border-radius: 5px;
     width: 20%;
@@ -70,4 +71,241 @@
     width: 50%;
     margin: auto;
     margin-bottom: 5px;
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 800px) {
+    .container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .container .row .inner-row {
+        margin: auto;
+        width: 60%;
+    }
+    
+    .container .row .inner-row .form-login {
+        border: solid #ce2e6c 2px;
+        border-radius: 0;
+        box-shadow: 0px 0px 0px grey;
+        width: 100%;
+        margin: auto;
+        background-color: #f0decb;
+    }
+    
+    .container .row .inner-row .form-login .form-header {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 0px 2px 5px grey;
+        border-bottom: none;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 0;
+    }
+    
+    .container .row .inner-row .form-login .form-group {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .container .row .inner-row .form-login .form-group .label-text {
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        border-bottom: solid #ce2e6c 5px;
+        border-radius: 5px;
+        width: 20%;
+    }
+    
+    .container .row .inner-row .form-login .form-group .form-control {
+        width: 50%;
+        margin: auto;
+        background-color: #ce2e6c;
+        border: dotted #7ea1d9 2px;
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+    }
+    
+    .container .row .inner-row .form-login .form-group .form-control::placeholder {
+        color: white;
+    }
+    
+    .container .row .inner-row .form-login .btn {
+        background-color: #ce2e6c;
+        border-radius: 20px;
+        width: 50%;
+        margin: auto;
+        transition: 0.3s;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    
+    .container .row .inner-row .form-login .btn:hover {
+        background-color: blue;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 5px;
+    }    
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .container .row .inner-row {
+        margin: auto;
+        width: 60%;
+    }
+    
+    .container .row .inner-row .form-login {
+        border: solid #ce2e6c 2px;
+        border-radius: 0;
+        box-shadow: 0px 0px 0px grey;
+        width: 100%;
+        margin: auto;
+        background-color: #f0decb;
+    }
+    
+    .container .row .inner-row .form-login .form-header {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 0px 2px 5px grey;
+        border-bottom: none;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 0;
+    }
+    
+    .container .row .inner-row .form-login .form-group {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .container .row .inner-row .form-login .form-group .label-text {
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        border-bottom: solid #ce2e6c 1px;
+        border-radius: 0;
+        width: 40%;
+    }
+    
+    .container .row .inner-row .form-login .form-group .form-control {
+        width: 80%;
+        margin: auto;
+        background-color: #ce2e6c;
+        border: solid #7ea1d9 2px;
+        border-radius: 0;
+        color: white;
+        text-align: center;
+    }
+    
+    .container .row .inner-row .form-login .form-group .form-control::placeholder {
+        color: white;
+    }
+    
+    .container .row .inner-row .form-login .btn {
+        background-color: #ce2e6c;
+        border-radius: 20px;
+        width: 50%;
+        margin: auto;
+        transition: 0.3s;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    
+    .container .row .inner-row .form-login .btn:hover {
+        background-color: blue;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .container .row .inner-row {
+        margin: auto;
+        width: 60%;
+    }
+    
+    .container .row .inner-row .form-login {
+        border: solid #ce2e6c 2px;
+        border-radius: 0;
+        box-shadow: 0px 0px 0px grey;
+        width: 100%;
+        margin: auto;
+        background-color: #f0decb;
+    }
+    
+    .container .row .inner-row .form-login .form-header {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 0px 2px 5px grey;
+        border-bottom: none;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 0;
+    }
+    
+    .container .row .inner-row .form-login .form-group {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .container .row .inner-row .form-login .form-group .label-text {
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        border-bottom: solid #ce2e6c 1px;
+        border-radius: 0;
+        width: 40%;
+    }
+    
+    .container .row .inner-row .form-login .form-group .form-control {
+        width: 100%;
+        margin: auto;
+        background-color: #ce2e6c;
+        border: solid #7ea1d9 2px;
+        border-radius: 0;
+        color: white;
+        text-align: center;
+    }
+    
+    .container .row .inner-row .form-login .form-group .form-control::placeholder {
+        color: white;
+    }
+    
+    .container .row .inner-row .form-login .btn {
+        background-color: #ce2e6c;
+        border-radius: 20px;
+        width: 50%;
+        margin: auto;
+        transition: 0.3s;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    
+    .container .row .inner-row .form-login .btn:hover {
+        background-color: blue;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
 }

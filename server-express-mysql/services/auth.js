@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const bcrypt = require('bcryptjs')
 const models = require('../models');
 
 var authService = {
@@ -20,6 +21,14 @@ var authService = {
             console.log(err);
             return null;
         }
+    },
+    hashPassword: function (plainTextPassword) {
+        let salt = bcrypt.genSaltSync(10);
+        let hash = bcrypt.hashSync(plainTextPassword, salt);
+        return hash;
+    },
+    comparePasswords: function(plainTextPassword, hashPassword) {
+        return bcrypt.compareSync(plainTextPassword, hashPassword)
     }
 }
 

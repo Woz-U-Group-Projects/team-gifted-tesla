@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React from 'react';
 
-import Motherboards from "../components/datafetchers/Motherboards";
 import MotherboardTitle from "../components/design/MotherboardTitle";
-import Slideshow from "../components/slideshow/SlideMotherboard";
+import SlideshowMotherboard from "../components/slideshow/SlideMotherboard";
+import SlideshowGraphic from "../components/slideshow/SlideGraphic";
 
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -13,11 +12,12 @@ import "./Home.css";
 const Home = props => {
     return (
         <div className="grid-container">
-            <MotherboardTitle />
+            {/*Needs New Method*/}
             <Container>
                 <Row>
-                    <Col className="column-mobo1"><Slideshow /></Col>
+                    <Col className="column-mobo1"><SlideshowMotherboard /></Col>
                 </Row>
+
             </Container>
         </div>
     )

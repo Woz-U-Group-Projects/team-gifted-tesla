@@ -1,0 +1,97 @@
+.view-motherboard-7-container {
+    width: 100%;
+    height: 400px;
+}
+
+.view-motherboard-7-id {
+    text-align: center;
+}
+
+/* Image */
+
+.view-motherboard-7-image {
+    width: 80%;
+    height: 55%;
+    margin: auto;
+}
+
+/* Name */
+.view-motherboard-7-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    border-bottom: solid black 1px;
+}
+
+/* Price */
+.view-motherboard-7-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/*Button */
+.view-motherboard-7-button {
+    border: solid black 2px;
+    background-color: gold;
+    border-radius: 10px;
+    color: black;
+}
+
+.view-motherboard-7-button:hover {
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .view-motherboard-7-container {
+        width: 100%;
+    }
+
+    .view-motherboard-7-image {
+        height: 55%;
+    }
+
+    .view-motherboard-7-name {
+        margin: 10px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .view-motherboard-7-container {
+        width: 100%;
+    }
+
+    .view-motherboard-7-image {
+        height: 50%;
+    }
+
+    .view-motherboard-7-name {
+        margin-top: 10px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .view-motherboard-7-container {
+        width: 100%;
+    }
+
+    .view-motherboard-7-image {
+        height: 60%;
+    }
+}
+
+@media (max-width: 400px) {
+    .view-motherboard-7-container {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .view-motherboard-7-image {
+        height: 50%;
+    }
+}

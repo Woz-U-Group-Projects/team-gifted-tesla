@@ -13,16 +13,19 @@
     margin-top: 40px;
 }
 
-.motherboardTitle .motherboard-title-text .motherboard-special-text {
+.motherboardTitle .motherboard-special-text {
     font-family: 'Monsterrat', sans-serif;
     font-size: 15px;
     background-color: gold;
     width: 10%;
     transform: skew(0deg, 0deg);
+    float: right;
     text-align: right;
-    position: absolute;
-    right: 0;
-    top: 8px;
+    margin-right: 208px;
+    transform: skew(-30deg, 0deg);
+    border: solid black 2px;
+    border-top: none;
+    padding-right: 10px;
 }
 
 @media (max-width: 1200px) {

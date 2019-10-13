@@ -126,6 +126,21 @@ router.get('/data8', function (req, res, next) {
     });
 });
 
+//Motherboard 9
+router.get('/data9', function (req, res, next) {
+    models.motherboards.findAll({
+        where: {
+            MotherboardId: {
+                [Op.gt]: 8,
+                [Op.lt]: 10
+            }
+        }
+    }).then(motherboardsFound => {
+        res.setHeader('Content-Type', 'application/json');
+        res.send(JSON.stringify(motherboardsFound));
+    });
+});
+
 //Get Motherboards by ID for specific pages
 router.get('/data/:id', function (req, res, next) {
     let motherboardsId = parseInt(req.params.id);

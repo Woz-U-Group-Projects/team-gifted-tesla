@@ -9,6 +9,7 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var projectsRouter = require("./routes/projects");
 var motherboardsRouter = require("./routes/motherboards");
+var graphicsRouter = require("./routes/graphics");
 
 var app = express();
 
@@ -48,6 +49,7 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/projects", projectsRouter);
 app.use("/motherboards", motherboardsRouter);
+app.use("/graphics", graphicsRouter);
 models.sequelize.sync().then(function () {
   console.log("DB Sync'd up");
 });

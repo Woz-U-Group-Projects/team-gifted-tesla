@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import "./Motherboards.css";
 
-import { Container, Col, Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 class Motherboards extends React.Component {
     state = {

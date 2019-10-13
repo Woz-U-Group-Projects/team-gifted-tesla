@@ -2,7 +2,7 @@ import React from 'react';
 import "./Header.css";
 
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { DropdownButton, Dropdown } from 'react-bootstrap';
+import { Dropdown } from 'react-bootstrap';
 
 const Header = props => {
     return (
@@ -22,7 +22,7 @@ const Header = props => {
                     </Dropdown.Menu>
                 </Dropdown>
                 <Link className="contact-link" to="/contact">1-800-555-555</Link>
-                <Link className="home-link" to="/home">Home</Link>
+                <Link className="home-link" to="/">Home</Link>
             </div>
             <div className="input-container">
                 <Dropdown>
@@ -31,8 +31,8 @@ const Header = props => {
                     </Dropdown.Toggle>
                     <Dropdown.Menu className="product-dropdown">
                         <Dropdown.Item href="/motherboards">Motherboards</Dropdown.Item>
+                        <Dropdown.Item href="/graphics">Graphics Cards</Dropdown.Item>
                         <Dropdown.Item href="#/action-1">Processors</Dropdown.Item>
-                        <Dropdown.Item href="#/action-1">Graphics Cards</Dropdown.Item>
                         <Dropdown.Item href="#/action-1">RAM</Dropdown.Item>
                         <Dropdown.Item href="#/action-1">Power Sources</Dropdown.Item>
                         <Dropdown.Item href="#/action-1">Solid State Drives</Dropdown.Item>

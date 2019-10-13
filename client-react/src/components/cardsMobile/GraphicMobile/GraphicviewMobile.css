@@ -1,0 +1,39 @@
+.view-card-inner-mobile {
+    border: solid blue 2px;
+    height: 400px;
+    margin-top: 70px;
+}
+
+.view-all-graphics-mobile {
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 100%;
+    width: 100px;;
+    height: 100px;
+    background-color: gold;
+    border: dotted #ce2e6c;
+    transition: 0.3s;
+}
+
+.view-all-graphics-mobile:hover {
+    width: 120px;
+    height: 120px;
+}
+
+.view-all-graphics-mobile .fa {
+    font-size: 30px;
+}
+
+.view-graphics-text-mobile {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Monsterrat', sans-serif;
+}
+
+@media (max-width: 400px) {
+    .view-all-graphics-mobile:hover {
+        width: 100px;
+        height: 100px;
+    }
+}
